@@ -23,8 +23,8 @@ $(window).load(function(){
         // send the collected data as JSON
 		xhr.send(JSON.stringify(data));
 
-		xhr.onloadend = function () {
-			console.log(true);
+		xhr.onloadend = function (data) {
+            console.log(data.currentTarget.response);
 		};
 
 	}

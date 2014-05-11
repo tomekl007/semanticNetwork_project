@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee6b6419-35c6-428e-b8d5-5785ed91227f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/filter/CorsHeadersFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/json/JsonObjectMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/json/exceptions/SematicRuntimeException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/main.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/index.html" afterPath="$PROJECT_DIR$/src/main/resources/assets/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/js.js" afterPath="$PROJECT_DIR$/src/main/resources/assets/js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SemanticWeb_Project.iml" afterPath="$PROJECT_DIR$/SemanticWeb_Project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/resources/VCardManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/resources/VCardManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/VCardsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/VCardsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/js.js" afterPath="$PROJECT_DIR$/src/main/resources/assets/js.js" />
     </list>
     <ignored path="SemanticWeb_Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,19 +66,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="110" selection-start="248" selection-end="248" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="375">
+            <state line="1" column="52" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/main.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="5" column="121" selection-start="239" selection-end="239" vertical-scroll-proportion="-2.375" vertical-offset="18" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
@@ -99,7 +87,16 @@
       <file leaf-file-name="js.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="77" selection-start="748" selection-end="748" vertical-scroll-proportion="0.6692913" vertical-offset="267" max-vertical-offset="648">
+            <state line="24" column="36" selection-start="685" selection-end="685" vertical-scroll-proportion="0.8110236" vertical-offset="123" max-vertical-offset="648">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AJAX.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="25" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="1208" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -160,15 +157,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/json/exceptions/SematicRuntimeException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="25" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VCardsService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/VCardsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="58" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -1136,12 +1124,12 @@
       <created>1399813954930</created>
       <updated>1399813954930</updated>
       <workItem from="1399813978139" duration="7118000" />
-      <workItem from="1399822667627" duration="7888000" />
+      <workItem from="1399822667627" duration="8389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15006000" />
+    <option name="totallyTimeSpent" value="15507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="6" />
@@ -1421,13 +1409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="25" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="1132" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlets/9.2.0.M0/jetty-servlets-9.2.0.M0.jar!/org/eclipse/jetty/servlets/CrossOriginFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="11" selection-start="2460" selection-end="2460" vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="1080">
@@ -1493,13 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/resources/VCardManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="558">
@@ -1518,16 +1492,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="25" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="1208" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="52" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="110" selection-start="248" selection-end="248" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="375">
+        <state line="5" column="121" selection-start="239" selection-end="239" vertical-scroll-proportion="-2.375" vertical-offset="18" max-vertical-offset="375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="77" selection-start="748" selection-end="748" vertical-scroll-proportion="0.6692913" vertical-offset="267" max-vertical-offset="648">
+        <state line="24" column="36" selection-start="685" selection-end="685" vertical-scroll-proportion="0.8110236" vertical-offset="123" max-vertical-offset="648">
           <folding />
         </state>
       </provider>
