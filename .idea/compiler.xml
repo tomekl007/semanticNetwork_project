@@ -25,6 +25,9 @@
         <module name="SemanticWeb_Project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SemanticWeb_Project" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

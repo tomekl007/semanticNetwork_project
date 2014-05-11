@@ -1,7 +1,9 @@
 package com.semantic.vcards.creator;
 
+import com.semantic.vcards.creator.filter.CorsHeadersFilter;
 import com.semantic.vcards.creator.resources.VCardManager;
 import com.yammer.dropwizard.Service;
+import com.yammer.dropwizard.assets.AssetsBundle;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
 
@@ -19,11 +21,14 @@ public class VCardsService extends Service<VCardsConfiguration>{
 
     @Override
     public void initialize(Bootstrap<VCardsConfiguration> bootstrap) {
-
+        bootstrap.setName("vcardConfig");
+        bootstrap.addBundle(new AssetsBundle("/assets", "/", "assets/index.html"));
     }
 
     @Override
     public void run(VCardsConfiguration configuration, Environment environment) throws Exception {
+
+        environment.addFilter(new CorsHeadersFilter(), "/*");
         environment.addResource(new VCardManager());
 
     }

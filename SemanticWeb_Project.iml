@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -11,6 +11,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlets:8.1.0.RC5" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-continuation:8.1.0.RC5" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-client:8.1.0.RC5" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:8.1.10.v20130312" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:8.1.10.v20130312" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:8.1.0.RC5" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:7.0.0.pre5" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.dropwizard:dropwizard-core:0.6.2" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.17.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.17.1" level="project" />
@@ -25,13 +34,9 @@
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-jetty:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:8.1.10.v20130312" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-continuation:8.1.10.v20130312" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:8.1.10.v20130312" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:8.1.10.v20130312" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:8.1.10.v20130312" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-logback:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.10" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.10" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-jersey:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-annotation:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.1.4" level="project" />
@@ -73,8 +78,6 @@
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.9" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:2.3.1" level="project" />
-    <orderEntry type="library" name="jquery-ui" level="application" />
-    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
 
