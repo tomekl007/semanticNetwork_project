@@ -9,8 +9,8 @@ $(window).load(function(){
 		
 	form.onsubmit = function(e){
 		e.preventDefault();
-		name = document.getElementById("name").value;
-		nickname = document.getElementById("nickname").value;
+		name = $("#name").val();
+		nickname = $("#nickname").val();
 		data["fullName"] = name;
 		data["nickName"] = nickname;
 		console.log(data)
@@ -22,10 +22,10 @@ $(window).load(function(){
 
         // send the collected data as JSON
 		xhr.send(JSON.stringify(data));
-
 		xhr.onloadend = function (data) {
             var rdf = data.currentTarget.response;
-            var div = document.getElementById("rdf");
+            console.log(rdf)
+            var div = $("#rdf");
             div.innerHTML  = rdf;
         };
 
