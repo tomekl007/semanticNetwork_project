@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee6b6419-35c6-428e-b8d5-5785ed91227f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/index.html" afterPath="$PROJECT_DIR$/src/main/resources/assets/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/js.js" afterPath="$PROJECT_DIR$/src/main/resources/assets/js.js" />
     </list>
     <ignored path="SemanticWeb_Project.iws" />
@@ -69,25 +70,25 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="52" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="1" column="17" selection-start="0" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="121" selection-start="239" selection-end="239" vertical-scroll-proportion="-2.375" vertical-offset="18" max-vertical-offset="375">
+            <state line="3" column="100" selection-start="107" selection-end="107" vertical-scroll-proportion="0.12605043" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="js.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="36" selection-start="685" selection-end="685" vertical-scroll-proportion="0.8110236" vertical-offset="123" max-vertical-offset="648">
+            <state line="29" column="8" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
@@ -190,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/rdf/parser/VCardParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/main.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/js.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/VCardsService.java" />
@@ -198,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/resources/VCardManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/json/JsonObjectMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/semantic/vcards/creator/json/exceptions/SematicRuntimeException.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/js.js" />
       </list>
     </option>
@@ -1124,12 +1125,12 @@
       <created>1399813954930</created>
       <updated>1399813954930</updated>
       <workItem from="1399813978139" duration="7118000" />
-      <workItem from="1399822667627" duration="8389000" />
+      <workItem from="1399822667627" duration="8666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15507000" />
+    <option name="totallyTimeSpent" value="15784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="6" />
@@ -1501,21 +1502,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="52" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="121" selection-start="239" selection-end="239" vertical-scroll-proportion="-2.375" vertical-offset="18" max-vertical-offset="375">
+        <state line="1" column="17" selection-start="0" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="685" selection-end="685" vertical-scroll-proportion="0.8110236" vertical-offset="123" max-vertical-offset="648">
+        <state line="29" column="8" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="100" selection-start="107" selection-end="107" vertical-scroll-proportion="0.12605043" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>

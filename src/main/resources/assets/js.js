@@ -24,8 +24,10 @@ $(window).load(function(){
 		xhr.send(JSON.stringify(data));
 
 		xhr.onloadend = function (data) {
-            console.log(data.currentTarget.response);
-		};
+            var rdf = data.currentTarget.response;
+            var div = document.getElementById("rdf");
+            div.innerHTML  = rdf;
+        };
 
 	}
 });
