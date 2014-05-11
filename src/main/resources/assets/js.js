@@ -26,7 +26,7 @@ $(window).load(function(){
             var rdf = data.currentTarget.response;
             console.log(rdf)
             var div = $("#rdf");
-            div.innerHTML  = rdf;
+            div.html(rdf);
         };
 
 	}
