@@ -1,8 +1,31 @@
 body{
 	width: 90%;
 	background-color: #9448ea;
+	font-size: 62.5%;
+}
+h1{
+	font-size: 24px; font-size: 2.4rem;  /* =24px */
+	color:white;
+}
+label{
+	color:white;
+	font-size: 16px; font-size: 1.6rem;  /* =24px */
 }
 div#rdf{
-	width :90%;
+	font-size: 16px; font-size: 1.6rem;  /* =24px */
+	width :50%;
 	background-color: #23a4c4;
+}
+input{
+	display: block;
+	border-radius: 5px 5px 5px 5px;
+	border-color:white; 
+}
+input:not([type]), input[type="submit"]
+{
+	font-size: 16px; font-size: 1.6rem;  /* =24px */
+	color: white;
+	background:#b600ff;
+	border-radius: 5px 5px 5px 5px;
+	border-color:white; 
 }
