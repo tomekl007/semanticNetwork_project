@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ontologycentral:ldspider:1.1d">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ontologycentral/ldspider/1.1d/ldspider-1.1d.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ontologycentral/ldspider/1.1d/ldspider-1.1d-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ontologycentral/ldspider/1.1d/ldspider-1.1d-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
