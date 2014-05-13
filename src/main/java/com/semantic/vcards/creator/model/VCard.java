@@ -5,6 +5,8 @@ package com.semantic.vcards.creator.model;
  * @since 2014-05-11
  */
 public class VCard {
+    private String givenName;
+
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -32,4 +34,16 @@ public class VCard {
 
     private String fullName;
     private String nickName;
+
+    public String getGivenName() {
+        return fullName.split(" ")[0];
+    }
+
+    public String getFamilyName() {
+        try{
+            return fullName.split(" ")[1];
+        }catch(Exception e ){
+            return "";
+        }
+    }
 }

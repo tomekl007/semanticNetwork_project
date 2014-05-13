@@ -44,7 +44,9 @@ public class GraphService {
     }
 
     private String fillPlaceholders(String json, VCard vCard) {
-        String result = json.replace("#nickname", vCard.getNickName());
-        return result.replace("#fullname", vCard.getFullName());
+        return json.replace("#nickname", vCard.getNickName())
+                .replace("#fullname", vCard.getFullName())
+                .replace("#family", vCard.getFamilyName())
+                .replace("#given", vCard.getGivenName());
     }
 }

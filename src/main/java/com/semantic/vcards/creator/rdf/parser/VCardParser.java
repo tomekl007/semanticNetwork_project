@@ -21,7 +21,14 @@ public class VCardParser {
 
         model.createResource(personUriPrefix + vCard.getFullName())
                 .addProperty(VCARD.FN, vCard.getFullName())
-                .addProperty(VCARD.NICKNAME, vCard.getNickName());
+                .addProperty(VCARD.NICKNAME, vCard.getNickName())
+                .addProperty(VCARD.N,
+                        model.createResource()
+                                .addProperty(VCARD.Given, vCard.getGivenName())
+                                .addProperty(VCARD.Family, vCard.getFamilyName()));
+
+
+
         Writer writer = new StringWriter();
         model.write(writer, "RDF/XML-ABBREV");
         return xmlAsCode(writer.toString());

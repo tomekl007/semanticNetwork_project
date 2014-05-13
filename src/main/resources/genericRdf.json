@@ -1,4 +1,11 @@
 {"list":[{"environment":"dummy","serviceName":"vcard","status":"ok","dependecies":
-    ["fullname : #fullname", "nickname : #nickname"]},{"environment":"dummy","serviceName":"fullname : #fullname","status":"ok",
+    ["fullname : #fullname", "nickname : #nickname", "resource#1"]},{"environment":"dummy","serviceName":"fullname : #fullname","status":"ok",
     "dependecies":[]},{"environment":"dummy",
-    "serviceName":"nickname : #nickname","status":"ok","dependecies":[]}]}
+    "serviceName":"nickname : #nickname","status":"ok","dependecies":[]}
+    ,{"environment":"dummy",
+        "serviceName":"resource#1","status":"ok","dependecies":["given : #given", "family: #family"]}
+    ,{"environment":"dummy",
+        "serviceName":"given : #given","status":"ok","dependecies":[]},
+    {"environment":"dummy",
+        "serviceName":"family: #family","status":"ok","dependecies":[]}
+]}
