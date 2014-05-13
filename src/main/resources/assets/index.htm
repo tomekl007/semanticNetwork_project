@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="sigma.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="demo2.js"></script>
+</head>
+
+
+<body>
+
+<h1>Create new vcard</h1>
+<FORM method="POST" action="http://localhost:8080/vcard" name="vcardForm" id="vcardForm" > <!--onsubmit="sendNewVCard()">-->
+    <label>Full Name</label><input type="text" name="fullname" id="name"/>
+    <label>Nickname</label><input type="text" name="nickname" id="nickname"/>
+    <input type="submit" value="Submit">
+</FORM>
+<div id="rdf"></div>
+<script type="text/javascript"src="js.js"></script>
+
+
+<div style="margin:0 auto;width:90%; height:70%;position:relative;">
+    <h2 style="text-shadow:0px 2px 0 rgba(255, 255, 255, 1);text-align:center;white-space:nowrap;color:hsl(185, 10%, 44%);margin:20px;">VCard graph visualization</h2>
+    <div id="control" style="vertical-align:top;display:inline-block;width:200px;border:4px none red;margin-bottom:20px;">
+        <button id="btnUndoNodeDeletions"  class="btn btn btn-small" style="width:160px;margin-top:7px;" onclick="refreshButtonHandler()">Start Refreshing</button><br>
+    </div>
+
+    <div style="display:none;border: 6px solid rgb(127, 148, 150); border-radius: 9px; background-color: white; -webkit-box-shadow:rgb(179, 179, 179) 0px 3px 39px; height: 100%; width:100%;">
+        <div id="sigmaElement" style="height:100%; width:100%;display:inline-block;position:relative;"></div>
+    </div>
+
+
+</div>
+</body>
+</html>

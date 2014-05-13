@@ -1,12 +1,12 @@
 
 $(window).load(function(){
 
-	
+
 	var form = document.getElementById("vcardForm"),
 		name  ,
 		nickname  ,
 		data = {};
-		
+
 	form.onsubmit = function(e){
 		e.preventDefault();
 		name = $("#name").val();

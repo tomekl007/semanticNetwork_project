@@ -51,6 +51,12 @@
             <artifactId>jena-arq</artifactId>
             <version>2.11.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.bazaarvoice.dropwizard</groupId>
+            <artifactId>dropwizard-configurable-assets-bundle</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.hp.hpl.jena</groupId>
@@ -80,6 +86,13 @@
     </repositories>
 
     <build>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
         <plugins>
             <!-- to create one deployable fat jar -->
             <plugin>
