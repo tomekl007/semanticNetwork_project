@@ -143,28 +143,44 @@ function drawEdgesFromJson(graph, sigInst){
 
 }
 
+
 function drawNodesFromJson(graph){
 
     var nextLine = 0;
+    var y = 0;
+    var x = 0;
+    var counter = 0;
     for (var i=0;i<graph.nodes.length;i++)
     {
-        if(i%3 == 0) {
-            nextLine += 1;
-        }
 
+        console.log("nextLine : " + nextLine);
         var plusOrMinus = Math.random() < 0.2 ? -1 : 1;
-        var x,y;
+        counter ++;
+        if(nextLine != 0 && counter == 2) {
+            y += 0.3;
+            counter = 0;
+        }
+        if(nextLine == 0){
+            x = 0;
+        }
+        else if( nextLine % 2 == 0){
+            x = - 0.3;
+        }else {
+            x = 0.3;
+        }
 
         console.log("x i y : " + x + " , " + y);
         console.log("draw node : " + JSON.stringify(graph.nodes[i]));
         thisGraphControl.addNodeToSigIns(graph.nodes[i].id,
             graph.nodes[i].label,
             graph.nodes[i].circular_color,
-            i/5 - nextLine/10,i/5 - nextLine/1.4,   //todo here create miningfull x and y
+            x,y,
             //graph.nodes[0].grid_x,
             //graph.nodes[0].grid_y,
             graph.nodes[i].size
         );
+
+        nextLine ++;
     }
 }
 
