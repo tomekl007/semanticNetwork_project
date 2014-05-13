@@ -15,7 +15,7 @@
 
 <h1>Create new vcard</h1>
 <FORM method="POST" action="http://localhost:8080/vcard" name="vcardForm" id="vcardForm" > <!--onsubmit="sendNewVCard()">-->
-    <label>Full Name</label><input type="text" name="fullname" id="name"/>
+    <label>Full Name</label><input type="text" name="fullname" id="name" pattern="^[A-Za-z]+\s[A-Za-z]+" title="name and surname requied" required="required">
     <label>Nickname</label><input type="text" name="nickname" id="nickname"/>
     <input type="submit" value="Submit">
 </FORM>
