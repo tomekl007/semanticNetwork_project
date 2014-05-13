@@ -2,6 +2,7 @@ package com.semantic.vcards.creator;
 
 import com.semantic.vcards.creator.filter.CorsHeadersFilter;
 import com.semantic.vcards.creator.resources.GraphService;
+import com.semantic.vcards.creator.resources.StaticService;
 import com.semantic.vcards.creator.resources.VCardManager;
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.assets.AssetsBundle;
@@ -23,7 +24,7 @@ public class VCardsService extends Service<VCardsConfiguration>{
     @Override
     public void initialize(Bootstrap<VCardsConfiguration> bootstrap) {
         bootstrap.setName("vcardConfig");
-        bootstrap.addBundle(new AssetsBundle("/assets", "/", "index.htm"));
+        bootstrap.addBundle(new AssetsBundle("/static", "/"));
     }
 
     @Override
@@ -32,7 +33,7 @@ public class VCardsService extends Service<VCardsConfiguration>{
         environment.addFilter(new CorsHeadersFilter(), "/*");
         environment.addResource(new VCardManager());
         environment.addResource(new GraphService());
-        //environment.addResource(new StaticService());
+        environment.addResource(new StaticService());
 
     }
 }

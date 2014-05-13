@@ -1,12 +1,11 @@
 package com.semantic.vcards.creator.resources;
 
+import com.semantic.vcards.creator.helpers.FileHelper;
 import com.semantic.vcards.creator.json.JsonObjectMapper;
 import com.semantic.vcards.creator.model.VCard;
-import org.apache.commons.io.FileUtils;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.io.File;
 
 /**
  * @author Tomasz Lelek
@@ -19,19 +18,9 @@ public class GraphService {
     @Produces(MediaType.APPLICATION_JSON)
     public String getGraphData(){
         String fileName = "/exampleGraphData.json";
-        return getJsonFromFile(fileName);
+        return FileHelper.getContentFromFile(fileName, this.getClass());
     }
 
-    private String getJsonFromFile(String fileName) {
-        try {
-            File jsonFile;
-            jsonFile = new File(getClass().getResource(fileName).toURI());
-            return FileUtils.readFileToString(jsonFile);
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException();
-        }
-    }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
@@ -39,7 +28,7 @@ public class GraphService {
     public String getGraphData(String json){
         VCard vCard = JsonObjectMapper.jsonToVcard(json);
         System.out.println(" --->" + vCard);
-        String jsonFile =  getJsonFromFile("/genericRdf.json");
+        String jsonFile =  FileHelper.getContentFromFile("/genericRdf.json", this.getClass());
         return fillPlaceholders(jsonFile, vCard);
     }
 
