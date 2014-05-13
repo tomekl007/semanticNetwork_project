@@ -1,0 +1,1 @@
+{"list":[{"environment":"staging","serviceName":"csvreports-dataservice","status":"ok","dependecies":["configuration-service"]},{"environment":"staging","serviceName":"csvreports-generator","status":"ok","dependecies":["csvreports-dataservice","configuration-service"]},{"environment":"staging","serviceName":"configuration-service","status":"ok","dependecies":[]}]}

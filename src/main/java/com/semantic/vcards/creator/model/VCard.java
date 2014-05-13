@@ -22,6 +22,14 @@ public class VCard {
         return nickName;
     }
 
+    @Override
+    public String toString() {
+        return "VCard{" +
+                "fullName='" + fullName + '\'' +
+                ", nickName='" + nickName + '\'' +
+                '}';
+    }
+
     private String fullName;
     private String nickName;
 }

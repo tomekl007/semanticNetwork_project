@@ -1,0 +1,4 @@
+{"list":[{"environment":"dummy","serviceName":"vcard","status":"ok","dependecies":
+    ["fullname : #fullname", "nickname : #nickname"]},{"environment":"dummy","serviceName":"fullname : #fullname","status":"ok",
+    "dependecies":[]},{"environment":"dummy",
+    "serviceName":"nickname : #nickname","status":"ok","dependecies":[]}]}

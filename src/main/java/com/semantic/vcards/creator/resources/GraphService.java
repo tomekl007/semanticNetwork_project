@@ -2,9 +2,11 @@ package com.semantic.vcards.creator.resources;
 
 import com.semantic.vcards.creator.json.JsonObjectMapper;
 import com.semantic.vcards.creator.model.VCard;
+import org.apache.commons.io.FileUtils;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.io.File;
 
 /**
  * @author Tomasz Lelek
@@ -16,10 +18,19 @@ public class GraphService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String getGraphData(){
-        return "{\"list\":[{\"environment\":\"staging\",\"serviceName\":\"csvreports-dataservice\",\"status\":\"ok\",\"" +
-                "dependecies\":[\"configuration-service\"]},{\"environment\":\"staging\",\"serviceName\":\"csvreports-generator\"," +
-                "\"status\":\"ok\",\"dependecies\":[\"csvreports-dataservice\",\"configuration-service\"]}," +
-                "{\"environment\":\"staging\",\"serviceName\":\"configuration-service\",\"status\":\"ok\",\"dependecies\":[]}]} ";
+        String fileName = "/exampleGraphData.json";
+        return getJsonFromFile(fileName);
+    }
+
+    private String getJsonFromFile(String fileName) {
+        try {
+            File jsonFile;
+            jsonFile = new File(getClass().getResource(fileName).toURI());
+            return FileUtils.readFileToString(jsonFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
     }
 
     @POST
@@ -27,6 +38,13 @@ public class GraphService {
     @Produces(MediaType.APPLICATION_JSON)
     public String getGraphData(String json){
         VCard vCard = JsonObjectMapper.jsonToVcard(json);
-        return "empty";
+        System.out.println(" --->" + vCard);
+        String jsonFile =  getJsonFromFile("/genericRdf.json");
+        return fillPlaceholders(jsonFile, vCard);
+    }
+
+    private String fillPlaceholders(String json, VCard vCard) {
+        String result = json.replace("#nickname", vCard.getNickName());
+        return result.replace("#fullname", vCard.getFullName());
     }
 }

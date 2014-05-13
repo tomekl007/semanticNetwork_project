@@ -1,9 +1,9 @@
-if (document.addEventListener) {
+/*if (document.addEventListener) {
     document.addEventListener("DOMContentLoaded", init, false);
 } else {
     window.onload = init;
 
-}
+} */
 
 /*$( "#btnUndoNodeDeletions" ).click(function() {
     console.log( "Handler for .click() called." );
@@ -12,7 +12,8 @@ function refreshButtonHandler(){
     //$('#sigmaElement').empty();
     //getForServicesData();
 
-    window.location.reload();
+   // window.location.reload();
+    init();
 }
 
 //setInterval(function(){window.location.reload();},3000);
@@ -21,8 +22,24 @@ var ignoreNextMouseUp = false;
 var nodeOutgoingEdges = {};
 var thisGraphControl;
 
+    var name,
+    nickname  ,
+    data = {};
+
+
 function getForServicesData(){
+    name = document.getElementById("name").value;
+    nickname = document.getElementById("nickname").value;
+    data["fullName"] = name;
+    data["nickName"] = nickname;
+    console.log("name -> " + name);
+
+
     $.ajax({
+        type: "POST",
+        data : JSON.stringify(data),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         url: "http://localhost:8080/graphData",
         fileType: "JSON",
         success: function(data){
@@ -56,7 +73,7 @@ graph = {
 
                     o ={
                         id: data.list[object]["serviceName"],
-                        label: data.list[object]["serviceName"] +" [ "+ data.list[object]["status"] + " ] ", //+ " Environment: "+data.list[object]["environment"] ,
+                        label: data.list[object]["serviceName"], //+" [ "+ data.list[object]["env"] + " ] ", //+ " Environment: "+data.list[object]["environment"] ,
                         circular_x:  Math.cos(Math.PI * 2 * object / 10 - Math.PI / 2),
                         circular_y:  Math.sin(Math.PI * 2 * object / 10 - Math.PI / 2),
                         circular_size: 10,
@@ -115,31 +132,6 @@ graph = {
 }
 
 
-//here could add new dummy data
-/*function addDummyNodes(graph){
-    addNodeToGraph(graph,
-    {id:"mail-sender",label:"mail-sender [ ok ]",circular_color:"#2EA717",grid_x:2
-        ,grid_y:0,grid_size:1,grid_color:"#333",x:2,y:0,size:1,color:"#333"});
-
-    addNodeToGraph(graph,
-        {id:"sell-data-mining-statistics",label:"sell-data-mining-statistics [ ok ]",circular_color:"#2EA717",grid_x:2
-            ,grid_y:0,grid_size:1,grid_color:"#333",x:2,y:0,size:1,color:"#333"});
-
-    addEdgeToGraph(graph, {id:"mail-sender->configuration-service","source":"mail-sender","target":"configuration-service","color":"#646464",arrow:"target"});
-    addEdgeToGraph(graph, {id:"csvreports-generator->mail-sender",source:"csvreports-generator",target:"mail-sender",color:"#646464",arrow:"target"});
-
-    addEdgeToGraph(graph, {id:"sell-data-mining-statistics->csvreports-dataservice",source:"sell-data-mining-statistics",target:"csvreports-dataservice",color:"#646464",arrow:"target"});
-    addEdgeToGraph(graph, {id:"sell-data-mining-statistics->configuration-service",source:"sell-data-mining-statistics",target:"configuration-service",color:"#646464",arrow:"target"});
-
-} */
-
-function addNodeToGraph(graph, parameters){
-    graph.nodes.push(parameters);
-}
-function addEdgeToGraph(graph, parameters){
-    graph.edges.push(parameters);
-}
-
 function drawEdgesFromJson(graph, sigInst){
 
     for (var i=0;i<graph.edges.length;i++)
@@ -168,7 +160,7 @@ function drawNodesFromJson(graph){
         thisGraphControl.addNodeToSigIns(graph.nodes[i].id,
             graph.nodes[i].label,
             graph.nodes[i].circular_color,
-            i/5 - nextLine/10,i/5 - nextLine/1.4,
+            i/5 - nextLine/10,i/5 - nextLine/1.4,   //todo here create miningfull x and y
             //graph.nodes[0].grid_x,
             //graph.nodes[0].grid_y,
             graph.nodes[i].size
