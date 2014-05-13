@@ -1,8 +1,9 @@
 package com.semantic.vcards.creator.helpers;
 
-import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 
 import java.io.File;
+import java.io.InputStream;
 
 /**
  * @author Tomasz Lelek
@@ -13,8 +14,10 @@ public class FileHelper {
     public static String getContentFromFile(String fileName, Class classZ) {
         try {
             File jsonFile;
-            jsonFile = new File(classZ.getResource(fileName).toURI());
-            return FileUtils.readFileToString(jsonFile);
+            System.out.println("--> " +classZ.getResource(fileName));
+            InputStream inputStream= classZ.getResourceAsStream(fileName);
+            //System.out.println(jsonFile.toString());
+            return IOUtils.toString(inputStream, "UTF-8");
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException();
