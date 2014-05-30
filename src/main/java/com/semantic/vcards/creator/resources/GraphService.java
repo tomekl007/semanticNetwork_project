@@ -22,6 +22,13 @@ public class GraphService {
     }
 
 
+    /**
+     * it consumes json, pars it to vCard object,
+     * and prepare data structure, which will be used
+     * in graph generating at client side
+     * @param json
+     * @return
+     */
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

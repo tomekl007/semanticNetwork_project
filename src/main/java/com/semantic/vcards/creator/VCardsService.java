@@ -15,7 +15,11 @@ import com.yammer.dropwizard.config.Environment;
  */
 public class VCardsService extends Service<VCardsConfiguration>{
 
-
+    /**
+     * web application is starting from main method
+     * @param args
+     * @throws Exception
+     */
         public static void main(String[] args) throws Exception {
             new VCardsService().run(new String[]{"server"});
         }
@@ -27,6 +31,12 @@ public class VCardsService extends Service<VCardsConfiguration>{
         bootstrap.addBundle(new AssetsBundle("/static", "/"));
     }
 
+    /**
+     * when start web app mount needed services
+     * @param configuration
+     * @param environment
+     * @throws Exception
+     */
     @Override
     public void run(VCardsConfiguration configuration, Environment environment) throws Exception {
 

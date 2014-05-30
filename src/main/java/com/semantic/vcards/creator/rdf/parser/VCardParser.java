@@ -14,7 +14,12 @@ import java.io.Writer;
  */
 public class VCardParser {
 
-    public static String parse(VCard vCard) {
+    /**
+     * creating proper rdf document for given vCard object
+     * @param vCard
+     * @return
+     */
+    public static String createRdf(VCard vCard) {
         Model model = ModelFactory.createDefaultModel();
 
         String personUriPrefix = "http://newperson/";

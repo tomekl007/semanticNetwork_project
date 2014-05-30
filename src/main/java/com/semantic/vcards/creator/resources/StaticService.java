@@ -10,6 +10,9 @@ import javax.ws.rs.Path;
  * @since 2014-05-12
  */
 
+/**
+ * controller which serves all static files ( html, css, js )
+ */
 @Path("/")
 public class StaticService {
     @Path("index")

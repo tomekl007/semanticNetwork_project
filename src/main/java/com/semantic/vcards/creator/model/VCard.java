@@ -4,6 +4,10 @@ package com.semantic.vcards.creator.model;
  * @author Tomasz Lelek
  * @since 2014-05-11
  */
+
+/**
+ * model object Vcard
+ */
 public class VCard {
     private String givenName;
 

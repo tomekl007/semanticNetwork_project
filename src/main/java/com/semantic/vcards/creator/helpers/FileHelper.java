@@ -10,7 +10,12 @@ import java.io.InputStream;
  * @since 2014-05-13
  */
 public class FileHelper {
-
+    /**
+     * read content from file with given fileName
+     * @param fileName
+     * @param classZ
+     * @return
+     */
     public static String getContentFromFile(String fileName, Class classZ) {
         try {
             File jsonFile;

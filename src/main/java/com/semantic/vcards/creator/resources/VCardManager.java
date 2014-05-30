@@ -15,11 +15,17 @@ import javax.ws.rs.core.MediaType;
  */
 @Path("/vcard")
 public class VCardManager {
+    /**
+     * this method consume json, createRdf it to VCard object,
+     * and from that vCard object generate proper RDF
+     * @param json
+     * @return
+     */
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public String createNewVcard(String json){
         VCard vCard = JsonObjectMapper.jsonToVcard(json);
         System.out.println("receive vCard" + vCard.getFullName());
-        return VCardParser.parse(vCard);
+        return VCardParser.createRdf(vCard);
     }
 }

@@ -20,13 +20,17 @@ public class JsonObjectMapper {
         return objectMapper;
     }
 
-
+    /**
+     * it make mapping from json to VCard
+      * @param json
+     * @return
+     */
     public static VCard jsonToVcard(String json) {
         try {
             return objectMapper.readValue(json, VCard.class);
         } catch (IOException e) {
             e.printStackTrace();
-            throw new SematicRuntimeException("can not parse json : " + json, e);
+            throw new SematicRuntimeException("can not createRdf json : " + json, e);
         }
     }
 }
